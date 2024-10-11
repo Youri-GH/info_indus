@@ -38,8 +38,8 @@ jobs:
             mkdir -p gh-pages/docs/
             cp -r ./doc/sphinx/build/html/* gh-pages/
             cd gh-pages
-            git config --local user.email "youri.hyjou@gmail.com"
-            git config --local user.name "Youri"
+            git config --local user.email "action@github.com"
+            git config --local user.name "GitHubAction"
             touch .nojekyll
             git add .
             git commit -m "Update documentation" -a || true
